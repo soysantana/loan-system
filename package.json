@@ -1,0 +1,21 @@
+{
+  "name": "loan-system",
+  "description": "",
+  "version": "0.0.0",
+  "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8"
+  },
+  "dependencies": {
+    "apexcharts": "^3.37.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.11.3",
+    "boxicons": "^2.1.4",
+    "chart.js": "^4.4.2",
+    "echarts": "^5.5.0",
+    "jquery": "^3.6.3"
+  }
+}
