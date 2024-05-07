@@ -1,7 +1,7 @@
 {
   "name": "loan-system",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "stackblitz": {
     "startCommand": "npm start"
