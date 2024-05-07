@@ -1,4 +1,5 @@
-<?php include_once('src/config/url.php'); ?>
+<?php $page_title = 'Login - Loan System'; ?>
+<?php include_once('src/config/functions.php'); ?>
 <?php include_once('src/components/header.php'); ?>
 <?php include_once('src/components/search.php'); ?>
 <?php include_once('src/components/user.php'); ?>
