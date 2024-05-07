@@ -1,4 +1,4 @@
-<?php include_once('../config/url.php'); ?>
+<?php include_once('../config/functions.php'); ?>
 <?php include_once('../components/header.php'); ?>
 <?php include_once('../components/search.php'); ?>
 <?php include_once('../components/user.php'); ?>
