@@ -1,5 +1,5 @@
-<?php $page_title = 'New Client - Loan System'; ?>
-<?php $nav_title = 'New Client'; ?>
+<?php $page_title = 'Dashboard - Loan System'; ?>
+<?php $nav_title = 'Home'; ?>
 <?php include_once('../config/functions.php'); ?>
 <?php include_once('../components/header.php'); ?>
 <?php include_once('../components/search.php'); ?>
@@ -8,7 +8,6 @@
 
 <main id="main" class="main">
 <?php include_once('../components/nav.php'); ?>
-
 
 </main>
 <!-- End #main -->
