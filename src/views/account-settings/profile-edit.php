@@ -15,63 +15,63 @@
                 <div class="row mb-3">
                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="fullName" type="text" class="form-control" id="fullName" value="Kevin Anderson" />
+                    <input name="fullName" type="text" class="form-control" id="fullName" value="<?php echo remove_junk($user['name']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="company" class="col-md-4 col-lg-3 col-form-label">Company</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="company" type="text" class="form-control" id="company" value="Lueilwitz, Wisoky and Leuschke" />
+                    <input name="company" type="text" class="form-control" id="company" value="<?php echo remove_junk($user['company']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Job" class="col-md-4 col-lg-3 col-form-label">Job</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="job" type="text" class="form-control" id="Job" value="Web Designer" />
+                    <input name="job" type="text" class="form-control" id="Job" value="<?php echo remove_junk($user['job']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="country" type="text" class="form-control" id="Country" value="USA" />
+                    <input name="country" type="text" class="form-control" id="Country" value="<?php echo remove_junk($user['country']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="address" type="text" class="form-control" id="Address" value="A108 Adam Street, New York, NY 535022" />
+                    <input name="address" type="text" class="form-control" id="Address" value="<?php echo remove_junk($user['address']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="phone" type="text" class="form-control" id="Phone" value="(436) 486-3538 x29071" />
+                    <input name="phone" type="text" class="form-control" id="Phone" value="<?php echo remove_junk($user['phone']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="email" type="email" class="form-control" id="Email" value="k.anderson@example.com" />
+                    <input name="email" type="email" class="form-control" id="Email" value="<?php echo remove_junk($user['email']); ?>" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Instagram" class="col-md-4 col-lg-3 col-form-label">Instagram Profile</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="instagram" type="text" class="form-control" id="Instagram" value="https://instagram.com/#" />
+                    <input name="instagram" type="text" class="form-control" id="Instagram" value="" />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <label for="Linkedin" class="col-md-4 col-lg-3 col-form-label">Linkedin Profile</label>
                   <div class="col-md-8 col-lg-9">
-                    <input name="linkedin" type="text" class="form-control" id="Linkedin" value="https://linkedin.com/#" />
+                    <input name="linkedin" type="text" class="form-control" id="Linkedin" value="" />
                   </div>
                 </div>
 
