@@ -1,16 +1,19 @@
-<?php $page_title = 'New Client - Loan System'; ?>
-<?php $nav_title = 'New Client'; ?>
-<?php include_once('../config/functions.php'); ?>
-<?php include_once('../components/header.php'); ?>
-<?php include_once('../components/search.php'); ?>
-<?php include_once('../components/user.php'); ?>
-<?php include_once('../components/sidebar.php'); ?>
+<?php 
+require_once('../config/load.php'); 
+
+page_require_level(2);
+
+$page_title = 'Clientes | Nuevo Cliente - Loan System'; 
+$nav_title = 'Nuevo Cliente'; 
+
+include_once('../components/header.php'); 
+include_once('../components/search.php'); 
+include_once('../components/user.php'); 
+include_once('../components/sidebar.php'); 
+?>
 
 <main id="main" class="main">
-<?php include_once('../components/nav.php'); ?>
-
-
+    <?php include_once('../components/nav.php'); ?>
 </main>
-<!-- End #main -->
 
 <?php include_once('../components/footer.php'); ?>

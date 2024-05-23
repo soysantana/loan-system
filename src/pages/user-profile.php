@@ -1,6 +1,6 @@
 <?php $page_title = 'Profile - Loan System'; ?>
 <?php $nav_title = 'Profile'; ?>
-<?php include_once('../config/functions.php'); ?>
+<?php include_once('../config/load.php'); ?>
 <?php include_once('../components/header.php'); ?>
 <?php include_once('../components/search.php'); ?>
 <?php include_once('../components/user.php'); ?>
