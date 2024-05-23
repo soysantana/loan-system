@@ -316,4 +316,37 @@
     }, 200);
   }
 
+  var currentUrl = window.location.pathname;
+var actions = {
+  "/loan-system/src/pages/new-client.php": function () {
+    activateMenuItem("#clients-nav .new-client");
+    expandMenuItem(".sub");
+  },
+  "/loan-system/src/pages/index.php": function () {
+    expandMenuItem(".nav-link[href='/loan-system/src/pages/index.php']");
+  },
+  "/loan-system/src/pages/user-profile.php": function () {
+    expandMenuItem(".nav-link[href='/loan-system/src/pages/user-profile.php']");
+  },
+};
+
+if (actions[currentUrl]) {
+  actions[currentUrl]();
+}
+
+function activateMenuItem(selector) {
+  document.querySelector(selector).classList.add("active");
+}
+
+function expandMenuItem(selector) {
+  var element = document.querySelector(selector);
+  if (element) {
+    element.classList.remove("collapsed");
+    var navContent = element.nextElementSibling;
+    if (navContent && navContent.classList.contains("nav-content")) {
+      navContent.classList.add("show");
+    }
+  }
+}
+
 })();

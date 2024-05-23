@@ -1,22 +1,21 @@
-<?php include_once('src/config/url.php'); ?>
-<?php include_once('src/components/header.php'); ?>
-<?php include_once('src/components/search.php'); ?>
-<?php include_once('src/components/user.php'); ?>
-<?php include_once('src/components/sidebar.php'); ?>
+<?php
+ob_start();
 
-  <main id="main" class="main">
+$page_title = 'Sign In - Loan System';
 
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+require_once('src/config/load.php');
 
+if ($session->isUserLoggedIn(true)) {
+    redirect('src/pages/index.php', false);
+}
 
-  </main><!-- End #main -->
+echo display_msg($msg);
 
-<?php include_once('src/components/footer.php'); ?>
+include_once('src/components/header.php');
+
+include_once('src/views/user/login.php');
+
+include_once('src/components/script.php');
+
+ob_end_flush();
+?>

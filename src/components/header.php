@@ -1,3 +1,4 @@
+<?php $user = current_user(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +6,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>
+    <?php if (!empty($page_title)) echo remove_junk($page_title);
+    elseif(!empty($user))
+    echo ucfirst($user['name']);
+    else echo "Login";?>
+  </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo url('/public/assets/img/favicon.png'); ?>" rel="icon">
-  <link href="<?php echo url('/public/assets/img/apple-touch-icon.png'); ?>" rel="apple-touch-icon">
+  <link href="<?php echo url('/public/image/favicon.png'); ?>" rel="icon">
+  <link href="<?php echo url('/public/image/apple-touch-icon.png'); ?>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
