@@ -47,9 +47,17 @@ function display_msg($msg = array()) {
   $output = "";
   if (!empty($msg)) {
       foreach ($msg as $key => $value) {
-          $output .= "<div class=\"alert alert-{$key} alert-dismissible fade show\" role=\"alert\">";
+          $output .= "<div aria-live=\"polite\" aria-atomic=\"true\" class=\"position-relative\">";
+          $output .= "<div class=\"toast-container position-absolute top-0 end-0 p-3\">";
+          $output .= "<div class=\"toast show align-items-center text-white bg-{$key} border-0\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">";
+          $output .= "<div class=\"d-flex\">";
+          $output .= "<div class=\"toast-body\">";
           $output .= remove_junk(first_character($value));
-          $output .= "<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>";
+          $output .= "</div>";
+          $output .= "<button type=\"button\" class=\"btn-close btn-close-white me-2 m-auto\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>";
+          $output .= "</div>";
+          $output .= "</div>";
+          $output .= "</div>";
           $output .= "</div>";
       }
   }
@@ -100,4 +108,15 @@ function url($rutaRelativa) {
     $rutaFinal = preg_replace('/\/+/', '/', $rutaFinal);
     return $rutaFinal;
 }
+/*--------------------------------------------------------------*/
+/* Function UUID
+/*--------------------------------------------------------------*/
+function uuid() {
+  return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+      mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff),
+      mt_rand(0, 0x0fff) | 0x4000, mt_rand(0, 0x3fff) | 0x8000,
+      mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff)
+  );
+}
+
 ?>
