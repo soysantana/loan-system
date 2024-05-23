@@ -1,3 +1,4 @@
+<?php $user = current_user(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,8 +16,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo url('/public/assets/img/favicon.png'); ?>" rel="icon">
-  <link href="<?php echo url('/public/assets/img/apple-touch-icon.png'); ?>" rel="apple-touch-icon">
+  <link href="<?php echo url('/public/image/favicon.png'); ?>" rel="icon">
+  <link href="<?php echo url('/public/image/apple-touch-icon.png'); ?>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
